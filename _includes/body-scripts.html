@@ -1,0 +1,43 @@
+<!-------- Link for jQuery Library --------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!---- Animate on Scroll JS ------>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+<!------ Animate on Scroll details ------>
+<script>
+    AOS.init({
+    offset: 150, // offset (in px) from the original trigger point
+    delay: 10, // values from 0 to 3000, with step 50ms
+    duration: 1000, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+});
+</script>
+
+<!-------- lIGHTGALLERY --------->
+
+<script src="js/lightgallery.umd.js"></script>
+
+<!-- lightgallery plugins -->
+<script src="js/plugins/lg-thumbnail.umd.js"></script>
+<script src="js/plugins/lg-zoom.umd.js"></script>
+
+<script type="text/javascript">
+    lightGallery(document.getElementById('lightgallery'), {
+        speed: 500,
+        mode: fade,
+        dowload: false,
+        enableSwipe: true,
+        closable: true,
+        controls: true, 
+        escKey: true,
+    })
+</script>
+
+<script type="text/javascript">
+    $('.hamburger-button').click(function(){
+        $('.mobile-menu').slideToggle();
+        $(this).toggleClass('active');
+    })
+</script>
