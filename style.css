@@ -35,6 +35,92 @@ html {
 
 html { display: block; }
 
+.uppercase { text-transform: uppercase; }
+
+/* Utility Classes and Universal Styles */
+
+.justify { justify-content: center; }
+
+.left    { text-align: left; }
+.center  { text-align: center; }
+.right   { text-align: right; }
+
+.padded { padding: 5%; }
+.padded-sm { padding: 1rem; }
+.padded-md { padding: 3%; }
+.padded-lg { padding: 10%; }
+
+.padding-0 { padding: 0; }
+.padded-2 { padding: 2rem; }
+
+.padding-r { padding-right: 10%; }
+.padding-l { padding-left: 10%; }
+.padding-t { padding-top: 5%; }
+.padding-b { padding-bottom: 5%; }
+
+.padding-l-sm { padding-left: 4%; }
+.padding-t-sm { padding-top: 3%; }
+.padding-r-sm { padding-right: 3%; }
+
+.featured-padded { 
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    opacity: 1;
+}
+
+.margin {
+    margin: 4%;
+}
+.mt     { margin-top: 3%; }
+.mb-sm  { margin-bottom: 1.5%; }
+.mb     { margin-bottom: 3%; }
+.mr     { margin-right: 3%; }
+.ml     { margin-left: 3%; }
+
+.mb-2 { margin-bottom: 5%; }
+
+.tall-10 { min-height: 10vh; }
+.tall-20 { min-height: 20vh; }
+.tall-30 { min-height: 30vh; }
+.tall-40 { min-height: 40vh; }
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+.tall-100 { min-height: 100vh; }
+
+.highlight { 
+    background-color: rgb(240,240,245);
+    display: inline-block;
+    padding: 2rem; 
+    margin: 2px;
+    opacity: 90%;
+}
+
+.white-text { 
+    color: white; 
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.linen-text { color: #ede8e3; }
+
+.footer-text {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.bg-featured    { background-color: #003734; }
+.bg-dark-grey   { background-color: #8d9097 ;}
+.bg-light-grey  { background-color: #c4cbd3; }
+.bg-linen       { background-color: #ede8e3; }
+.bg-slate       { background-color: #292c33; }
+
 /* Button Classes */
 
 .button {
@@ -104,6 +190,31 @@ html { display: block; }
     background-position: center;
     min-height: 90vh;
     position: relative;
+}
+
+.bg-gondola {
+    background-image: url('./images/gondola.jpg');
+    background-position: center;
+}
+
+.bg-giraffe {
+    background-image: url('./images/giraffe.jpg');
+    background-position: center;
+}
+
+.bg-santorini {
+    background-image: url('./images/santorini.jpg');
+    background-position: center;
+}
+
+.bg-florence {
+    background-image: url('./images/florence.jpg');
+    background-position: center;
+}
+
+.bg-bali {
+    background-image: url('./images/bali.jpg');
+    background-position: center;
 }
 
 /* Image Gallery */
