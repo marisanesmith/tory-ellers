@@ -69,14 +69,14 @@ h5 {
     font-size: 1rem;
     font-weight: 300;
 }
-
+/* 
 .logo {
     font-family: minerva-modern, sans-serif;
     text-transform: uppercase;
     font-weight: 400;
     font-style: normal;
     color: #292c33;
-}
+} */
 
 a {
     text-decoration: none; 
@@ -284,6 +284,14 @@ hr {
     background-position: center;
 }
 
+.bg-main-logo {
+    background-image: url('./images/logo1.png');
+    background-position: center;
+    background-size: cover;
+    width: 15%;
+    height: 10%;
+}
+
 /* Image Gallery */
 
 /* Aspect Ratio  */
@@ -336,4 +344,96 @@ hr {
 
 .flex-flip {
     flex-direction: row-reverse;
+}
+
+/* Menu & Mobile Menu */
+.hamburger-button {
+    cursor: pointer; 
+    /* padding: 1.5rem; */
+    padding-right: 5%;
+    display: inline-block;
+    line-height: 0.7;
+    z-index: 2;
+    /* position: fixed; */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.hamburger-button-2 {
+    cursor: pointer; 
+    /* padding: 1.5rem; */
+    padding-right: 5%;
+    display: inline-block;
+    line-height: 0.7;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.hamburger-button.active {
+    color: black;
+    z-index: 2;
+}
+
+.mobile-menu {
+    color: inherit;
+    display: none;
+    background-color: #ede8e3;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 5vh 4%;
+}
+
+/* General Responsive Styles (Desktop and below) */
+
+.mob-show {
+    display: none;
+}
+
+.header-home {
+    padding: 1% 4%;
+}
+.nav-text {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Media Queries */
+
+@media(max-width: 64em) {
+    .mob-hide { display: none; }
+    .mob-show { display: block; }
+    h1 { font-size: 2rem; }
+    nav a { font-size: 2rem; }
+}
+
+@media(max-width: 48em) {
+    .mob-hide { display: none; }
+    .mob-show { display: block; }
+    h1 { font-size: 1.7rem; }
+    nav a { font-size: 1.7rem; }
+    .footer-text { font-size: 1rem; }
+}
+
+@media(max-width: 36em) {
+    .mob-hide { display: none; }
+    .mob-show { display: block; }
+    h1 { font-size: 1.3rem; }
+    h2 { font-size: 1.2rem; }
+    nav a { font-size: 1.3rem; }
+    .footer-text { font-size: 0.6rem;}
 }
