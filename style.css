@@ -57,17 +57,22 @@ h2 {
 
 h3 {
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 h4 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 300;
 }
 
 h5 {
     font-size: 1rem;
     font-weight: 300;
+}
+
+p {
+    font-size: 0.9rem;
+    font-weight: 100;
 }
 /* 
 .logo {
@@ -82,7 +87,7 @@ a {
     text-decoration: none; 
     font-size: 1.3rem;
     padding: 1rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 h2:last-child,
@@ -97,7 +102,7 @@ p:last-child {
 hr {
     border: none;
     border-bottom: 2px solid #292c33;
-    width: 24rem;
+    width: 12rem;
 }
 
 /* Utility Classes and Universal Styles */
@@ -142,7 +147,12 @@ hr {
 .mr     { margin-right: 3%; }
 .ml     { margin-left: 3%; }
 
+.ml-1   { margin-left: 10%; }
+.mr-1   { margin-right: 10%; }
+
 .mb-2 { margin-bottom: 5%; }
+.mr-2 { margin-right: 15%; }
+.ml-2 { margin-left: 15%; }
 
 .tall-10 { min-height: 10vh; }
 .tall-20 { min-height: 20vh; }
@@ -171,6 +181,11 @@ hr {
     font-size: 1.5rem;
 }
 
+.grey-text  { 
+    color: #504E4E;
+    font-weight: 100;
+}
+
 .linen-text { color: #ede8e3; }
 
 .footer-text {
@@ -179,14 +194,26 @@ hr {
 }
 
 .bg-featured    { background-color: #003734; }
+.bg-lt-beige    { background-color: #F2F0EB; }
 .bg-md-beige    { background-color: #EDE6DE ;}
 .bg-dk-beige    { background-color: #AEA396;}
+.bg-camel       { background-color: #B0846A; }
+
+.split-dk-beige {
+    background: linear-gradient(
+180deg,#fff 50%,#AEA396 50%);
+}
+
+.split-lt-beige {
+    background: linear-gradient(
+180deg,#fff 50%, #EDE6DE 50%);
+}
 
 
 /* Button Classes */
 
-.button {
-    border: 2px solid #5e616b;
+.button-grey {
+    border: 2px solid #101820;
     padding: 0.6rem 2rem;
     text-decoration: none;
     text-align: center;
@@ -207,17 +234,19 @@ hr {
     text-transform: uppercase;
 }
 
-.button:hover {
-    border: 2px solid #ede8e3;
+.button-grey:hover {
+    border: 2px solid #F2F0EB;
 }
 
 .button-white:hover {
-    border: 2px solid #227872;
+    border: 2px solid #B0846A;
 }
 
 /* Images & Background Images */
 
 .box-shadow { box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; }
+
+.beige-border { border: 6px solid #AEA396; }
 
 .gallery [class*="col-"] {
     padding: 0.5%;
@@ -284,7 +313,17 @@ hr {
     background-position: center;
 }
 
-.bg-main-logo {
+.bg-morocco {
+    background-image: url('./images/morocco.jpg');
+    background-position: center;
+}
+
+.bg-ocean {
+    background-image: url('./images/ocean.jpg');
+    background-position: center;
+}
+
+.main-logo {
     background-image: url('./images/logo1.png');
     background-position: center;
     background-size: cover;
@@ -344,6 +383,80 @@ hr {
 
 .flex-flip {
     flex-direction: row-reverse;
+}
+
+/* Accordian Styles */
+
+.accordion-header { color: black; }
+.accordion-button { 
+    background-color: white !important; 
+    color: black !important; 
+    font-size: 1.3rem !important;
+    font-weight: 100 !important;
+}
+.accordion-body   { 
+    color: black !important; 
+    font-family: minerva-modern sans-serif;
+}
+.accordion-item   { 
+    border: none; 
+}
+
+/* Contact Form Styles */
+  
+form input, 
+form textarea {
+  width: 50%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  /* border: 2px solid rgb(220,220,220); */
+  font-family: minerva-modern, sans-serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  /* background-color: #f4eee6; */
+  border-bottom: 2px solid #B0846A;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #B0846A;
+}
+
+textarea {
+  min-height: 0.5rem;
+}
+
+form label {
+  margin-top: 1rem;
+  display: block;
+  color: #B0846A;
+  font-weight: bold;
+}
+
+form button {
+  background-color: #B0846A;
+  opacity: 80%;
+  font-family: minerva-modern, sans-serif;
+  color: white;
+  border: 2px solid #B0846A;
+  /* border-radius: 3px; */
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+form button:hover {
+  background-color: white;
+  color: #B0846A;
+  border: 2px solid #B0846A;
 }
 
 /* Menu & Mobile Menu */
@@ -410,6 +523,25 @@ hr {
 .nav-text {
     font-size: 1rem;
     font-weight: 300;
+}
+
+/* Footer */
+
+.footer-nav {
+    padding: 3%;
+    font-weight: 300;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.social-links i {
+    font-size: 1.5rem;
+}
+
+.icons i {
+    font-size: 2.5rem;
+    margin-bottom: 6%;
+    color: #B0846A;
 }
 
 /* Media Queries */
