@@ -173,6 +173,14 @@ hr {
     opacity: 90%;
 }
 
+.large-text { 
+    font-size: 3rem; 
+    color: white;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-family: minerva-modern;
+}
+
 .white-text { 
     color: white; 
     text-transform: uppercase;
@@ -183,6 +191,11 @@ hr {
 
 .grey-text  { 
     color: #504E4E;
+    font-weight: 100;
+}
+
+.dk-beige-text  { 
+    color: #AEA396;
     font-weight: 100;
 }
 
@@ -213,7 +226,7 @@ hr {
 /* Button Classes */
 
 .button-grey {
-    border: 2px solid #101820;
+    border: 2px solid #504E4E;
     padding: 0.6rem 2rem;
     text-decoration: none;
     text-align: center;
@@ -221,10 +234,11 @@ hr {
     font-size: 0.9rem;
     letter-spacing: 1px;
     text-transform: uppercase;
+    background-color: #AEA396;
 }
 
 .button-white {
-    border: 2px solid #ede8e3;
+    border: 2px solid #504E4E;
     padding: 0.6rem 2rem;
     text-decoration: none;
     text-align: center;
@@ -232,6 +246,7 @@ hr {
     font-size: 0.9rem;
     letter-spacing: 1px;
     text-transform: uppercase;
+    background-color: white; 
 }
 
 .button-grey:hover {
@@ -352,6 +367,30 @@ hr {
 
 .gallery [class*="col-"] {
   padding: 0.5%;
+}
+
+.circle {
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.rounded-top {
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.rounded-corner {
+    border-top-left-radius: 125px;
+    border-bottom-right-radius: 125px;
+}
+
+.rounded {
+    border-top-left-radius: 80%;
+    border-bottom-right-radius: 80%;
+    border-top-right-radius: 80%;
+    border-bottom-left-radius: 80%;
 }
 
 /* Hover Containers for Images */
