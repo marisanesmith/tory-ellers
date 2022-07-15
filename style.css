@@ -19,6 +19,8 @@ Fonts
     box-sizing: border-box;
 }
 
+div { display: block; }
+
 header {
     padding: 1% 5%;
 }
@@ -90,6 +92,10 @@ a {
     /* text-transform: uppercase; */
 }
 
+a:hover {
+    color: #B0846A;
+}
+
 h2:last-child,
 h3:last-child,
 h4:last-child,
@@ -154,7 +160,10 @@ hr {
 .mr-2 { margin-right: 15%; }
 .ml-2 { margin-left: 15%; }
 
+.ml-3 { margin-left: 1% }
+
 .tall-10 { min-height: 10vh; }
+.tall-15 { min-height: 15vh; }
 .tall-20 { min-height: 20vh; }
 .tall-30 { min-height: 30vh; }
 .tall-40 { min-height: 40vh; }
@@ -220,6 +229,12 @@ hr {
 .split-lt-beige {
     background: linear-gradient(
 180deg,#fff 50%, #EDE6DE 50%);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
 
 
@@ -567,14 +582,14 @@ form button:hover {
 /* Footer */
 
 .footer-nav {
-    padding: 3%;
+    /* padding: 3%; */
     font-weight: 300;
     font-size: 1.1rem;
     text-transform: uppercase;
 }
 
 .social-links i {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .icons i {
