@@ -12,6 +12,10 @@ Fonts
     Libre Baskerville
 */
 
+@font-face {
+    font-family: 'brittany';
+    src: url('./fonts/BrittanySignature.ttf');
+}
 
 * {
     padding: 0;
@@ -59,7 +63,7 @@ h2 {
 
 h3 {
     font-weight: 300;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 h4 {
@@ -103,6 +107,12 @@ h5:last-child,
 h6:last-child,
 p:last-child {
     margin-bottom: 0;
+}
+
+.fancy-text { 
+    font-family: 'brittany'; 
+    font-size: 2rem;
+    margin-bottom: 3%;
 }
 
 hr {
@@ -156,12 +166,13 @@ hr {
 .ml-1   { margin-left: 10%; }
 .mr-1   { margin-right: 10%; }
 
-.mb-2 { margin-bottom: 5%; }
-.mr-2 { margin-right: 15%; }
-.ml-2 { margin-left: 15%; }
+.mb-2   { margin-bottom: 5%; }
+.mr-2   { margin-right: 15%; }
+.ml-2   { margin-left: 15%; }
+.mt-2   { margin-top: 15%;  }
 
-.ml-3 { margin-left: 1% }
-.mt-3 { margin-top: 2%; }
+.ml-3   { margin-left: 1% }
+.mt-3   { margin-top: 2%; }
 
 .tall-10 { min-height: 10vh; }
 .tall-15 { min-height: 15vh; }
@@ -188,7 +199,7 @@ hr {
     color: white;
     font-weight: 300;
     letter-spacing: 0.5px;
-    font-family: minerva-modern;
+    /* font-family: minerva-modern; */
 }
 
 .white-text { 
@@ -221,6 +232,10 @@ hr {
 .bg-md-beige    { background-color: #EDE6DE ;}
 .bg-dk-beige    { background-color: #AEA396;}
 .bg-camel       { background-color: #B0846A; }
+.bg-white-wall { 
+    background-image: url('./images/white_wall_hash.png');
+    background-position: center;
+}
 
 .split-dk-beige {
     background: linear-gradient(
@@ -262,7 +277,7 @@ hr {
     font-size: 0.9rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    background-color: white; 
+    background-color: url('./images/white_wall_hash.png'); 
 }
 
 .button-grey:hover {
@@ -314,6 +329,14 @@ hr {
     position: relative;
 }
 
+.banner-2 {
+    background-image: url('/images/morocco.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+    position: relative;
+}
+
 .bg-gondola {
     background-image: url('./images/gondola.jpg');
     background-position: center;
@@ -351,6 +374,11 @@ hr {
 
 .bg-ocean {
     background-image: url('./images/ocean.jpg');
+    background-position: center;
+}
+
+.bg-monstera {
+    background-image: url('./images/monstera.jpg');
     background-position: center;
 }
 
@@ -621,6 +649,7 @@ form button:hover {
     .mob-show { display: block; }
     h1 { font-size: 1.3rem; }
     h2 { font-size: 1.2rem; }
+    h3 { font-size: 1.1rem; }
     nav a { font-size: 1.3rem; }
     .footer-text { font-size: 0.6rem;}
 }
