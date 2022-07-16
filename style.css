@@ -500,6 +500,7 @@ form textarea {
   cursor: pointer;
   /* background-color: #f4eee6; */
   border-bottom: 2px solid #B0846A;
+  background-color: #F2F0EB;
 }
 
 form input:focus,
@@ -519,10 +520,10 @@ form label {
 }
 
 form button {
-  background-color: #B0846A;
+  background-color: #F2F0EB;
   opacity: 80%;
   font-family: minerva-modern, sans-serif;
-  color: white;
+  color: #101820;
   border: 2px solid #B0846A;
   /* border-radius: 3px; */
   letter-spacing: 0.1rem;
@@ -537,7 +538,7 @@ form button {
 }
 
 form button:hover {
-  background-color: white;
+  background-color: #F2F0EB;
   color: #B0846A;
   border: 2px solid #B0846A;
 }

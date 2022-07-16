@@ -3,9 +3,9 @@ layout: default
 title: Tory Ellers Membership Page
 ---
 
-<section class="grid bg-white-wall padding-r padding-l ">
-    <div class="col-12 center padding-t">
-        <p class="uppercase">tory ellers memebership</p>
+<section class="grid bg-white-wall padded">
+    <div class="col-12 center">
+        <p class="uppercase">tory ellers membership</p>
     </div>
     <div class="col-12 center">
         <h3 style="font-size: 2.9rem;">Join the World of Luxury Travel</h3>
@@ -40,15 +40,29 @@ title: Tory Ellers Membership Page
 
 <!---------- SIGN UP FORM & PHOTOS --------->
 
-<section class="grid">
-    <div class="col-6_md-12"></div>
-    <div class="col-6_md-12 padded">
-        <div class="col-3 tall-40 bg-image bg-gondola"></div>
-        <div class="col-3 tall-40 bg-image bg-gondola"></div>
-        <div class="col-3 tall-40 bg-image bg-gondola"></div>
-        <div class="col-3 tall-40 bg-image bg-gondola"></div>
+<div class="gallery grid padded bg-lt-beige justify">
+    <div class="col-6 center">
+        <h2 class="uppercase">Membership</h2>
+        <h4>$949 per year</h4>
+        <form class="col-12 center" action="https://formspree.io/f/mnqwadve"
+    method="POST">
+      <label for="_name"></label>
+      <input type="text" placeholder="Name" name="_name" id="_name" />
+      <label for="_replyto"></label>
+      <input class="mb" type="email" placeholder="Email" name="_replyto" id="_replyto" />
+      <br>
+      <button type="submit" class="button">send message</button>
+    </form>
     </div>
-</section>
+    <div class="col-3">
+        <div class="mb bg-image box-shadow bg-manarola square"></div>
+        <div class="bg-image square box-shadow bg-bali"></div>
+    </div>
+    <div class="col-3">
+        <div class="mb bg-image box-shadow bg-santorini square"></div>
+        <div class="bg-image square box-shadow bg-gondola"></div>
+    </div>
+</div>
 
 <!--------- NEWSLETTER SIGN UP -------->
 <div>
