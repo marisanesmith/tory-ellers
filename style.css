@@ -395,6 +395,11 @@ hr {
     background-position: center;
 }
 
+.bg-lofoten {
+    background-image: url('./images/lofoten.JPG');
+    background-position: center;
+}
+
 .main-logo {
     background-image: url('./images/logo1.png');
     background-position: center;
