@@ -26,6 +26,14 @@
   gtag('config', 'G-JMBTRZF04H');
 </script>
 
+<!--------- HIDE DATA FROM GOOGLE-->
+
+{% if page.seo.hide-from-google == true %}
+    <meta name="robots" content="noindex, nofollow">
+{% else %}
+    <meta name="robots" content="index, follow">
+{% endif %}
+
 <!-------- Adobe Fonts --------->
 <link rel="stylesheet" href="https://use.typekit.net/mtv5bbw.css">
 
@@ -37,7 +45,7 @@
     rel="stylesheet">
 
 <!--------- Favicon --------->
-<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<!-- <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
 <link rel="manifest" href="/icons/site.webmanifest">
@@ -45,7 +53,12 @@
 <link rel="shortcut icon" href="/icons/favicon.ico">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-config" content="/icons/browserconfig.xml">
-<meta name="theme-color" content="#F2F0EB">
+<meta name="theme-color" content="#F2F0EB"> -->
+
+<link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+<link rel="icon" type="image/png" href="/icons/favicon.png">
+
+
 
 <!------- Animate on Scroll CSS ------->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
