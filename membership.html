@@ -1,6 +1,30 @@
 ---
 layout: default
 title: Tory Ellers Membership Page
+disclaimer:
+ - title: Complimentary Breakfast 
+   description: For up to two guests per room
+ - title: Check in/Out 
+   description: Available at most luxury hotels, but subject to the resort or hotel’s availability.
+ - title: Minimum Spending
+   description: There is a $500 per adult/day minimum spending requirement, which includes lodging, transfers, and experiences. 
+ - title: Upgrades 
+   description: Subject to the resort or hotel’s availability
+ - title: Airfare 
+   description: Booking in economy plus or equivalent tier must be handled by the member. 
+ - title: Trip Gifting
+   description: Your membership is only redeemable if the primary or secondary membership holder is on the trip. 
+accordion:
+ - question: Complimentary Breakfast 
+   answer: For up to two guests per room
+ - question: Complimentary Breakfast 
+   answer: For up to two guests per room
+ - question: Complimentary Breakfast 
+   answer: For up to two guests per room
+ - question: Complimentary Breakfast 
+   answer: For up to two guests per room
+ - question: Complimentary Breakfast 
+   answer: For up to two guests per room
 ---
 
 <section class="grid bg-white-wall padded">
@@ -45,48 +69,52 @@ title: Tory Ellers Membership Page
     <div class="col-12 center">
         <h3 class="padding-b-sm">The Features</h3>
     </div>
-    <div class="col-3">
+    <div class="col-3_sm-6">
         <h4>Get There.</h4>
         <ul>
             <li>Chartered</li>
             <li>First or business class plane tickets</li>
         </ul>
+        <p class="ml"><em>Booked for you.</em></p>
     </div>
-    <div class="col-3">
+    <div class="col-3_sm-6">
         <h4>Recharge.</h4>
         <ul>
             <li>Chartered</li>
             <li>First or business class plane tickets</li>
         </ul>
+        <p class="ml"><em>On arrival.</em></p>
     </div>
-    <div class="col-3">
+    <div class="col-3_sm-6">
         <h4>Go Out.</h4>
         <ul>
             <li>Chartered</li>
             <li>First or business class plane tickets</li>
         </ul>
+        <p class="ml"><em>Tailored for you.</em></p>
     </div>
-    <div class="col-3">
+    <div class="col-3_sm-6">
         <h4>Rest Easy.</h4>
         <ul>
             <li>Chartered</li>
             <li>First or business class plane tickets</li>
         </ul>
+        <p class="ml"><em>Enjoy peace of mind.</em></p>
     </div>
 </section>
 
 <!------ PHOTO SECTION -------->
 
-<section class="grid tall-40 split-lt-beige">
+<!-- <section class="grid tall-40 split-lt-beige">
     <div class="col-1"></div>
     <div class="col-10-middle bg-image landscape-narrow center bg-ocean">
     </div>
     <div class="col-1"></div>
-</section>
+</section> -->
 
 <!------- BECOME A MEMBER QUESTION -------->
 
-<section class="grid padded bg-white-wall">
+<!-- <section class="grid padded bg-white-wall">
     <div class="col-7_md-12 center">
         <h4>Why Should You Become a Member of Tory Ellers?</h4>
         <p class="mr-1 ml-1 mt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nulla laborum quo at non
@@ -109,7 +137,7 @@ title: Tory Ellers Membership Page
             labore rem cumque nesciunt ducimus dignissimos repellat ut libero nobis, beatae laboriosam vero atque, eum
             aspernatur repellendus inventore.</p>
     </div>
-</section>
+</section> -->
 
 <!---------- SIGN UP FORM & PHOTOS --------->
 
@@ -136,7 +164,44 @@ title: Tory Ellers Membership Page
     </div>
 </div>
 
-<!--------- NEWSLETTER SIGN UP -------->
-<div>
-    {% include newsletter.html %}
+<!------- THE FINE PRINT SECTION --------->
+
+<section class="grid padded bg-dk-beige">
+    <div class="col-12 center">
+        <h3 class="white-text">The Fine Print.</h3>
+        <h4 class="white-text">Important details about your membership.</h4>
+        <hr>
+    </div>
+    {% for item in page.disclaimer %}
+    <div class="col-4_sm-6 mt">
+        <h4 class="white-text center">{{item.title}}:</h4>
+        <p class="white-text center padding-l padding-r">{{item.description}}</p>
+    </div>
+    {% endfor %}
+</section>
+
+<!------ PHOTO SECTION -------->
+<section class="grid-center banner-4"></section>
+
+<!--------- ACCORDION SECTION --------->
+
+<div class="accordion padded mr-1 ml-1">
+    <h3 class="center uppercase mb">Client Services</h3>
+    {% for item in page.accordion %}
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseOne">
+                {{item.question}}
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+                {{item.answer}}
+            </div>
+        </div>  
+    </div>
+    {% endfor %}
 </div>

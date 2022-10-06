@@ -424,6 +424,14 @@ hr {
     position: relative;
 }
 
+.banner-4 {
+    background-image: url('/images/maldives.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    position: relative;
+}
+
 .bg-gondola {
     background-image: url('./images/gondola.jpg');
     background-position: center;
