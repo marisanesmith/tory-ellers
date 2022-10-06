@@ -89,6 +89,12 @@ p {
     color: #292c33;
 } */
 
+li {
+    font-size: 0.9rem;
+    font-weight: 100;
+    font-family: minerva-modern, sans-serif;
+}
+
 a {
     text-decoration: none; 
     font-size: 1.3rem;
@@ -118,7 +124,7 @@ p:last-child {
 hr {
     border: none;
     border-bottom: 2px solid #292c33;
-    width: 12rem;
+    width: 24rem;
 }
 
 /* Utility Classes and Universal Styles */
@@ -145,6 +151,10 @@ hr {
 .padding-l-sm { padding-left: 4%; }
 .padding-t-sm { padding-top: 3%; }
 .padding-r-sm { padding-right: 3%; }
+.padding-b-sm { padding-bottom: 3%; }
+
+.padding-r-lg { padding-right: 18%; }
+.padding-l-lg { padding-left: 18%; }
 
 .featured-padded { 
     padding-left: 10%;
@@ -219,6 +229,10 @@ hr {
     font-size: 2.6rem;
     font-weight: 300;
     letter-spacing: 0.5px;
+}
+
+.sm-md-text {
+    font-size: 1.5rem;
 }
 
 .white-text { 
@@ -313,6 +327,22 @@ hr {
     letter-spacing: 1px;
     text-transform: uppercase;
     background-color: url('./images/white_wall_hash.png'); 
+}
+
+.button-white-border {
+    border: 2px solid white;
+    padding: 0.6rem 2rem;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.button-white-border:hover {
+    color: #101820;
 }
 
 .button-grey:hover {
