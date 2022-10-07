@@ -14,6 +14,20 @@ photos:
    position: bg-pos-c
 ---
 
+<!-------- PHOTOS SECTION ---------->
+
+<section class="padded bg-dk-beige mob-hide">
+    <div class="grid">
+        {% for item in page.photos %}
+        <div class="{{item.column-size}}" href="{{item.background_image}}">
+            <div class="bg-image box-shadow {{item.aspect-ratio}} {{item.position}}" style="background-image:url('{{item.background_image}}')"></div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="grid-center mob-show banner-4"></section>
+
 
 <section class="grid padded bg-lt-beige">
     <div class="col-4_md-12 center icons">
@@ -41,110 +55,6 @@ photos:
             fugiat officiis.</p>
     </div>
 </section>
-
-<!-------- PHOTOS SECTION ---------->
-
-<section class="mr ml mt">
-    <!-- <h3 class="mb">Brand Photography</h3> -->
-    <div class="grid">
-        {% for item in page.photos %}
-        <div class="{{item.column-size}}" href="{{item.background_image}}">
-            <div class="bg-image {{item.aspect-ratio}} {{item.position}}" style="background-image:url('{{item.background_image}}')"></div>
-        </div>
-        {% endfor %}
-    </div>
-</section>
-
-<!--------- ACCORDION SECTION --------->
-
-<div class="accordion padded mr-1 ml-1">
-    <h3 class="center uppercase mb">Client Services</h3>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseOne">
-                TRAVEL PERKS
-            </button>
-        </h2>
-        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
-            aria-labelledby="panelsStayOpen-headingOne">
-            <div class="accordion-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed numquam laboriosam perspiciatis, velit
-                voluptate quam eligendi nulla exercitationem temporibus repellendus pariatur eaque fugiat laudantium
-                architecto aperiam impedit eos odio! 
-            </div>
-        </div>  
-    </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseTwo">
-                PERSONALIZED PLANNING
-            </button>
-        </h2>
-        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-            aria-labelledby="panelsStayOpen-headingTwo">
-            <div class="accordion-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed numquam laboriosam perspiciatis, velit
-                voluptate quam eligendi nulla exercitationem temporibus repellendus pariatur eaque fugiat laudantium
-                architecto aperiam impedit eos odio!
-            </div>
-        </div>
-    </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseThree">
-                EXCLUSIVE RESORTS & HOTELS
-            </button>
-        </h2>
-        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-            aria-labelledby="panelsStayOpen-headingThree">
-            <div class="accordion-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed numquam laboriosam perspiciatis, velit
-                voluptate quam eligendi nulla exercitationem temporibus repellendus pariatur eaque fugiat laudantium
-                architecto aperiam impedit eos odio!
-            </div>
-        </div>
-    </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseFour">
-                CUSTOMIZED PLANNING
-            </button>
-        </h2>
-        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
-            aria-labelledby="panelsStayOpen-headingFive">
-            <div class="accordion-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed numquam laboriosam perspiciatis, velit
-                voluptate quam eligendi nulla exercitationem temporibus repellendus pariatur eaque fugiat laudantium
-                architecto aperiam impedit eos odio! 
-            </div>
-        </div>  
-    </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseFive">
-                CAREFREE TRAVEL
-            </button>
-        </h2>
-        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
-            aria-labelledby="panelsStayOpen-headingFive">
-            <div class="accordion-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed numquam laboriosam perspiciatis, velit
-                voluptate quam eligendi nulla exercitationem temporibus repellendus pariatur eaque fugiat laudantium
-                architecto aperiam impedit eos odio! 
-            </div>
-        </div>  
-    </div>
-</div>
 
 <!------- EXPLORE HOTELS SECTION -------->
 
