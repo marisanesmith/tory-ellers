@@ -745,7 +745,7 @@ form button:hover {
     .mob-hide       { display: none; }
     .mob-show       { display: block; }
     h1              { font-size: 2rem; }
-    nav a           { font-size: 2rem; }
+    nav a           { font-size: 1.4rem; }
     .xl-text        { font-size: 2.5rem; }
     .med-lg-text    { font-size: 3rem; }
     .static-button  { 
