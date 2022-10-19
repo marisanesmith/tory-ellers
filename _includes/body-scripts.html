@@ -3,6 +3,10 @@
     integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+<!----- Slick Slider JS ------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 <!---- Animate on Scroll JS ------>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -51,6 +55,23 @@
         $('.mobile-menu').slideToggle();
         $(this).toggleClass('active');
     })
+</script>
+
+<script type="text/javascript">
+    $('.slider-container').slick({
+        autoplay: true, // Do we want it to autoplay? true or false
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplaySpeed: 3000, // How long between each slide when auto-playing
+        speed: 500, // How fast is the transition in milliseconds
+        arrows: true, // Do you want to show arrows to trigger each slide
+        accessibility: true, // Enables keyboard tabbing and arrow key navigation
+        dots: true, // Enables the dots below to show how many slides
+        fade: false, // Changes the animate from slide to fade if true
+        infinite: true, // When true, means that it will scroll in a circle
+        pauseOnHover: false, // When true means the autoplay pauses when hovering
+        pauseOnDotsHover: true, // Pauses the autoplay when hovering over the dots
+    });
 </script>
 
 <!-- <script type="text/javascript">

@@ -125,6 +125,11 @@ hr {
     border: none;
     border-bottom: 2px solid #292c33;
     width: 24rem;
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 3%;
 }
 
 /* Utility Classes and Universal Styles */
@@ -183,6 +188,8 @@ hr {
 
 .ml-3   { margin-left: 1% }
 .mt-3   { margin-top: 2%; }
+
+.mb-4   { margin-bottom: 20%; }
 
 .tall-10 { min-height: 10vh; }
 .tall-15 { min-height: 15vh; }
@@ -244,10 +251,12 @@ hr {
 
 .white-text { 
     color: white; 
-    /* text-transform: uppercase; */
     letter-spacing: 0.5px;
-    /* font-weight: 400; */
-    /* font-size: 1.5rem; */
+}
+
+.black-text {
+    color: #101820;
+    position: relative;
 }
 
 .grey-text  { 
@@ -441,6 +450,24 @@ hr {
     background-position: center;
     min-height: 60vh;
     position: relative;
+}
+
+.banner-5 {
+    background-position: center;
+    min-height: 60vh;
+    position: relative;
+}
+
+.banner-5::before {
+    content: "";
+    background-image: url('/images/sand-dune.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
 }
 
 .bg-gondola {
@@ -706,6 +733,45 @@ form button:hover {
     padding: 5vh 4%;
 }
 
+/* Slick Slider styles */
+
+.slider-container { padding: 5%; }
+
+.slider-item {
+    padding: 1rem;
+    display: none;
+}
+
+.slider-item:first-child {
+    display: block;
+}
+
+.slick-next::before, .slick-prev::before {
+    font-family: slick;
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: black;
+}
+
+.slick-prev {
+    left: 2%;
+}
+
+.slick-next {
+    right: 2%;
+}
+
+.slick-dots {
+    bottom: 12%;
+    left: 0; /* This align the dots perfectly to the center, do not delete */
+}
+
+.slick-dots li,
+.slick-dots li button {
+   	width: 10px;
+}
+
 /* General Responsive Styles (Desktop and below) */
 
 .mob-show {
@@ -735,8 +801,8 @@ form button:hover {
 
 .icons i {
     font-size: 2.5rem;
-    margin-bottom: 6%;
-    color: #B0846A;
+    margin-bottom: 2.5rem;
+    color: #AEA396;
 }
 
 /* Media Queries */
@@ -745,9 +811,11 @@ form button:hover {
     .mob-hide       { display: none; }
     .mob-show       { display: block; }
     h1              { font-size: 2rem; }
+    p               { font-size: 0.6rem;}
     nav a           { font-size: 1.4rem; }
     .xl-text        { font-size: 2.5rem; }
     .med-lg-text    { font-size: 3rem; }
+    .small-text     { font-size: 0.9rem; }
     .static-button  { 
         font-size: 1.7rem; 
         margin-bottom: 10%;
@@ -783,10 +851,10 @@ form button:hover {
 @media(max-width: 36em) {
     .mob-hide       { display: none; }
     .mob-show       { display: block; }
-    h1              { font-size: 1.3rem; }
-    h2              { font-size: 1.2rem; }
-    h3              { font-size: 1.5rem; }
-    h4              { font-size: 1.1rem; }
+    h1              { font-size: 1.5rem; }
+    h2              { font-size: 1.4rem; }
+    h3              { font-size: 1.2rem; }
+    h4              { font-size: 0.9rem; }
     a               { font-size: 0.9rem; }
     nav a           { font-size: 1.3rem; }
     .med-lg-text    { font-size: 1.5rem; }
