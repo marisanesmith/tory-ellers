@@ -106,6 +106,7 @@ a:hover {
     color: #B0846A;
 }
 
+
 h2:last-child,
 h3:last-child,
 h4:last-child,
@@ -129,7 +130,7 @@ hr {
     align-items: center;
     text-align: center;
     margin: auto;
-    margin-top: 3%;
+    /* padding: 1%; */
 }
 
 /* Utility Classes and Universal Styles */
@@ -227,7 +228,7 @@ hr {
 }
 
 .med-text {
-    font-size: 1rem; 
+    font-size: 1.1rem; 
     font-weight: 300;
     letter-spacing: 0.5px;
 }
@@ -813,8 +814,9 @@ form button:hover {
     h1              { font-size: 2rem; }
     p               { font-size: 0.6rem;}
     nav a           { font-size: 1.4rem; }
+    .sm-md-text     { font-size: 1.2rem; }
     .xl-text        { font-size: 2.5rem; }
-    .med-lg-text    { font-size: 3rem; }
+    .med-lg-text    { font-size: 2.6rem; }
     .small-text     { font-size: 0.9rem; }
     .static-button  { 
         font-size: 1.7rem; 
@@ -833,10 +835,11 @@ form button:hover {
     h1              { font-size: 1.7rem; }
     nav a           { font-size: 1.7rem; }
     .footer-text    { font-size: 1rem; }
+    .sm-md-text     { font-size: 1rem; }
     .large-text     { font-size: 1.9rem; }
     .xl-text        { font-size: 2rem; }
-    .med-text       { font-size: 0.8rem; }
-    .med-lg-text    { font-size: 2.8rem; }
+    .med-text       { font-size: 1rem; }
+    .med-lg-text    { font-size: 2.4rem; }
     .banner         { min-height: 80vh; }
     .static-button  { 
         font-size: 1.2rem; 
@@ -854,10 +857,11 @@ form button:hover {
     h1              { font-size: 1.5rem; }
     h2              { font-size: 1.4rem; }
     h3              { font-size: 1.2rem; }
-    h4              { font-size: 0.9rem; }
+    h4              { font-size: 1rem; }
+    p               { font-size: 0.9rem;}
     a               { font-size: 0.9rem; }
     nav a           { font-size: 1.3rem; }
-    .med-lg-text    { font-size: 1.5rem; }
+    .med-lg-text    { font-size: 1.3rem; }
     .footer-text    { font-size: 0.4rem; }
     .static-button  { 
         font-size: 0.4rem; 
