@@ -29,16 +29,16 @@ accordion:
 
 
 <!----- Figure out the weird padding ------->
-<section class="grid bg-image banner-5">
+<section class="grid bg-image banner-5 tall-20">
     <div class="col-12-middle center">
-        <p class="uppercase black-text">tory ellers membership</p>
+        <p class="uppercase black-text padding-t">tory ellers membership</p>
     </div>
-    <div class="col-12 center" data-aos="zoom-in" data-aos-duration="2000">
-        <h3 class="black-text large-text">The world is incredible. Come explore it. </h3>
+    <div class="col-12 center" data-aos="fade-in" data-aos-duration="2000">
+        <h3 class="black-text large-text padding-b-sm">The world is incredible. Come explore it. </h3>
 
     </div>
     <div class="col-12 center">
-        <p class="padding-r-lg padding-l-lg black-text small-text">To celebrate our very first chapter as a club, we’re waiving our enrollment fees for 2022 and 2023.  Now there’s even less standing between you and the stories you’ll tell over and over again.  </p>
+        <p class="padding-r-lg padding-l-lg padding-b black-text sm-md-text">To celebrate our very first chapter as a club, we’re waiving our enrollment fees for 2022 and 2023.  Now there’s even less standing between you and the stories you’ll tell over and over again.  </p>
     </div>
     <!-- <div class="col-4_sm-12 center mt">
         <h5 class="fancy-text padding-b">Custom Travel Planning</h5>
@@ -71,7 +71,7 @@ accordion:
     <div class="col-12 center">
         <h3 class="editable padding-b-sm">The Features</h3>
     </div>
-    <div class="col-3_sm-6">
+    <div class="col-3_xs-12" data-aos="fade-up">
         <h4 class="editable">Get There.</h4>
         <ul class="mr">
             <li class="editable">Chartered</li>
@@ -83,7 +83,7 @@ accordion:
         </ul>
         <p class="editable mob-show ml"><em>Booked for you.</em></p>
     </div>
-    <div class="col-3_sm-6">
+    <div class="col-3_xs-12" data-aos="fade-up">
         <h4 class="editable">Recharge.</h4>
         <ul class="mr">
             <li class="editable">Luxury accommodations at hotels, villas, and resorts</li>
@@ -95,19 +95,24 @@ accordion:
         </ul>
         <p class="editable mob-show ml"><em>On arrival.</em></p>
     </div>
-    <div class="col-3_sm-6">
+    <div class="col-3_xs-12" data-aos="fade-up">
         <h4 class="editable">Go Out.</h4>
         <ul class="mr">
-            <li class="editable">Chartered</li>
-            <li class="editable">First or business class plane tickets</li>
+            <li class="editable">Private experiences</li>
+            <li class="editable">Hand-picked dining reservations</li>
+            <li class="editable">Exclusive events</li>
+            <li class="editable">Activities, excursions, and day trips</li>
+            <li class="editable">Custom itineraries</li>
         </ul>
         <p class="editable ml mob-show"><em>Tailored for you.</em></p>
     </div>
-    <div class="col-3_sm-6">
+    <div class="col-3_xs-12" data-aos="fade-up">
         <h4 class="editable">Rest Easy.</h4>
         <ul class="mr">
-            <li class="editable">Chartered</li>
-            <li class="editable">First or business class plane tickets</li>
+            <li class="editable">Mid trip check-ins</li>
+            <li class="editable">24/7 availability for questions, assistance, or emergencies</li>
+            <li class="editable">Rebooking or trip adjustments for the unexpected</li>
+            <li class="editable">Support via phone, email, and WhatsApp while on your trip</li>
         </ul>
         <p class="editable ml mob-show"><em>Enjoy peace of mind.</em></p>
     </div>
@@ -180,7 +185,7 @@ accordion:
             <a class="button-white mt mb-4 uppercase" href="membership.html" data-aos="fade-in">join us</a>
         </div>
     </div>
-    <div class="col-5_md-12">
+    <div class="col-5_md-12" data-aos="fade-up">
         <div class="bg-image box-shadow tall-80 bg-gondola"></div>
     </div>
     <!-- <div class="col-3">
@@ -210,7 +215,7 @@ accordion:
             <a class="button-white mt mb-4 uppercase" href="membership.html" data-aos="fade-in">join us</a>
         </div>
     </div>
-    <div class="col-5_md-12">
+    <div class="col-5_md-12" data-aos="fade-up">
         <div class="bg-image box-shadow tall-70 bg-bali"></div>
     </div>
 </div>
@@ -221,10 +226,9 @@ accordion:
     <div class="col-12 center">
         <h3 class="white-text">The Fine Print.</h3>
         <h4 class="white-text">Important details about your membership.</h4>
-        <hr>
     </div>
     {% for item in page.disclaimer %}
-    <div class="col-4_sm-6 mt">
+    <div class="col-4_sm-12 mt" data-aos="fade-up">
         <h4 class="white-text center">{{item.title}}:</h4>
         <p class="white-text center padding-l padding-r">{{item.description}}</p>
     </div>

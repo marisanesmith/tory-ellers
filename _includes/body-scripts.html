@@ -58,6 +58,13 @@
 </script>
 
 <script type="text/javascript">
+    $('.burger-button').click(function () {
+        $('.mobile-menu').slideToggle();
+        $(this).toggleClass('active');
+    })
+</script>
+
+<script type="text/javascript">
     $('.slider-container').slick({
         autoplay: true, // Do we want it to autoplay? true or false
         slidesToShow: 3,

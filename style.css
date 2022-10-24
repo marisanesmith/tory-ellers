@@ -125,7 +125,7 @@ p:last-child {
 hr {
     border: none;
     border-bottom: 2px solid #292c33;
-    width: 24rem;
+    width: 18rem;
     display: block;
     align-items: center;
     text-align: center;
@@ -455,7 +455,7 @@ hr {
 
 .banner-5 {
     background-position: center;
-    min-height: 60vh;
+    /* min-height: 60vh; */
     position: relative;
 }
 
@@ -683,14 +683,88 @@ form button:hover {
 }
 
 /* Menu & Mobile Menu */
+
+.burger-button {
+    position: fixed;
+    top: 4vh;
+    right: 4vh;
+    z-index: 9;
+    padding: 9px;
+    margin-top: 1.1rem;
+}
+
+.burger-button.active .burger-top {
+    position: absolute;
+    top: 8px;
+    transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-bottom {
+    position: absolute;
+    bottom: 8px;
+    transform: rotateZ(-50deg);
+}
+
+.burger-button.active .burger-middle {
+   border-color: transparent;
+   background-color:rgba(0, 0, 0, 0);
+}
+
+.burger-button.active span {
+    border-color: #000;
+    background-color: #000;
+}
+
+.burger-button span {
+    width: 40px;
+    border-bottom: 1px solid #000;
+    display: block;
+    border-radius: 22px;
+    transition: 1s;
+}
+
+.burger-top {
+    top: 2px;
+}
+
+.burger-bottom {
+    bottom: 2px;
+}
+
+.burger-bottom, .burger-top {
+    position: absolute;
+}
+
+.burger-menu.active {
+    top: 0;
+    bottom: 0;
+}
+
+.burger-menu {
+    display: flex;
+    position: fixed;
+    top: 100vh;
+    left: 0;
+    right: 0;
+    bottom: 100vh;
+    background-color: #ede8e3;
+    padding: 5px;
+    /* box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%); */
+    z-index: 8;
+    transition: 1s;
+    align-content: space-around;
+    flex-direction: column;
+}
+
 .hamburger-button {
+    color: #000;
     cursor: pointer; 
     /* padding: 1.5rem; */
     padding-right: 5%;
     display: inline-block;
     line-height: 0.7;
     z-index: 2;
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
@@ -711,9 +785,22 @@ form button:hover {
     left: 0;
 }
 
+/* #hamburger-button.active {
+    transform: translateY(10px) rotate(40deg);
+} */
+
 .hamburger-button.active {
     color: black;
-    z-index: 2;
+    transform: translateY(10px) rotate (40deg);
+}
+
+.line {
+    width: 70px;
+    height: 2px;
+    background-color: #000;
+    display: block;
+    margin: 8px auto;
+    transition: all .3s ease-in-out;
 }
 
 .mobile-menu {
@@ -726,7 +813,8 @@ form button:hover {
     right: 0;
     left: 0;
     text-align: center;
-    z-index: 2;
+    z-index: 1;
+    text-transform: uppercase; 
 }
 
 .mobile-menu a {
@@ -812,12 +900,22 @@ form button:hover {
     .mob-hide       { display: none; }
     .mob-show       { display: block; }
     h1              { font-size: 2rem; }
-    p               { font-size: 0.6rem;}
+    h3              { font-size: 1.6rem; }
+    p               { font-size: 0.9rem;}
     nav a           { font-size: 1.4rem; }
+    hr              { width: 10rem; }
     .sm-md-text     { font-size: 1.2rem; }
     .xl-text        { font-size: 2.5rem; }
     .med-lg-text    { font-size: 2.6rem; }
     .small-text     { font-size: 0.9rem; }
+    .mob-pad        { 
+        padding-right: 6%;
+        padding-left: 6%;
+     }
+     .mob-pad-2        { 
+        padding-right: 4%;
+        padding-left: 4%;
+     }
     .static-button  { 
         font-size: 1.7rem; 
         margin-bottom: 10%;
@@ -833,14 +931,24 @@ form button:hover {
     .mob-hide       { display: none; }
     .mob-show       { display: block; }
     h1              { font-size: 1.7rem; }
+    h3              { font-size: 1.4rem; }
     nav a           { font-size: 1.7rem; }
     .footer-text    { font-size: 1rem; }
-    .sm-md-text     { font-size: 1rem; }
+    .sm-md-text     { font-size: 0.7rem; }
     .large-text     { font-size: 1.9rem; }
     .xl-text        { font-size: 2rem; }
     .med-text       { font-size: 1rem; }
     .med-lg-text    { font-size: 2.4rem; }
+    .bold-text      { font-size: 1.2rem; }
     .banner         { min-height: 80vh; }
+    .mob-pad        { 
+        padding-right: 8%;
+        padding-left: 8%;
+     }
+     .mob-pad-2        { 
+        padding-right: 6%;
+        padding-left: 6%;
+     }
     .static-button  { 
         font-size: 1.2rem; 
         margin-bottom: 10%;
@@ -858,7 +966,7 @@ form button:hover {
     h2              { font-size: 1.4rem; }
     h3              { font-size: 1.2rem; }
     h4              { font-size: 1rem; }
-    p               { font-size: 0.9rem;}
+    p               { font-size: 0.8rem;}
     a               { font-size: 0.9rem; }
     nav a           { font-size: 1.3rem; }
     .med-lg-text    { font-size: 1.3rem; }
