@@ -303,6 +303,28 @@ hr {
     right: 0;
 }
 
+/* Tory Ellers symbol */
+
+.symbol {
+    position: relative;
+    top: 14px;
+    left: 50px;
+    background-color:rgba(0, 0, 0, 0);
+}
+
+.symbol-2 {
+    position: relative;
+    top: 14px;
+    left: 93%;
+    background-color:rgba(0, 0, 0, 0);
+}
+.symbol-3 {
+    position: relative;
+    top: -14px;
+    left: 93%;
+    background-color:rgba(0, 0, 0, 0);
+}
+
 
 /* Button Classes */
 
@@ -742,7 +764,7 @@ form button:hover {
 
 .burger-menu {
     display: flex;
-    position: fixed;
+    /* position: fixed; */
     top: 100vh;
     left: 0;
     right: 0;
