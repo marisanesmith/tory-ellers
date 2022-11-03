@@ -17,6 +17,11 @@ Fonts
     src: url('./fonts/BrittanySignature.ttf');
 }
 
+@font-face {
+    font-family: 'libre';
+    src: url('./fonts/LibreBaskerville-Regular.otf');
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -45,8 +50,14 @@ html { display: block; }
 
 /* Typography */
 
-h1, h2, h3, h4, h5, p, a {
+h1, h2, h3, p, a {
     font-family: minerva-modern, sans-serif;
+    color: #292c33;
+    letter-spacing: 1px;
+}
+
+h4, h5 {
+    font-family: 'libre', 'serif';
     color: #292c33;
     letter-spacing: 1px;
 }
@@ -58,17 +69,17 @@ h1 {
 
 h2 { 
     font-size: 2.5rem;
-    font-weight: 300;
+    /* font-weight: 300; */
 }
 
 h3 {
-    font-weight: 300;
-    font-size: 2rem;
+    font-weight: 200;
+    font-size: 1.8rem;
 }
 
 h4 {
-    font-size: 1.4rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 100;
 }
 
 h5 {
@@ -189,8 +200,10 @@ hr {
 
 .ml-3   { margin-left: 1% }
 .mt-3   { margin-top: 2%; }
+.mr-3   { margin-right: 1%; }
 
 .mb-4   { margin-bottom: 20%; }
+.ml-4   { margin-left: 23%; }
 
 .tall-10 { min-height: 10vh; }
 .tall-15 { min-height: 15vh; }
@@ -201,6 +214,7 @@ hr {
 .tall-60 { min-height: 60vh; }
 .tall-70 { min-height: 70vh; }
 .tall-80 { min-height: 80vh; }
+.tall-82 { min-height: 82vh; }
 .tall-90 { min-height: 90vh; }
 .tall-100 { min-height: 100vh; }
 
@@ -213,8 +227,8 @@ hr {
 }
 
 .xl-text { 
-    font-size: 3.5rem; 
-    font-family: minerva-modern, sans-serif;
+    font-size: 3.2rem; 
+    /* font-family: minerva-modern, sans-serif; */
     letter-spacing: 0.3px;
     font-weight: 300;
 }
@@ -303,6 +317,12 @@ hr {
     right: 0;
 }
 
+.border { 
+    border-style: double;
+    color: black;
+    border-width: 5px;
+}
+
 /* Tory Ellers symbol */
 
 .symbol {
@@ -310,6 +330,7 @@ hr {
     top: 14px;
     left: 50px;
     background-color:rgba(0, 0, 0, 0);
+    
 }
 
 .symbol-2 {
@@ -712,7 +733,7 @@ form button:hover {
     right: 4vh;
     z-index: 9;
     padding: 9px;
-    margin-top: 1.1rem;
+    margin-top: 1rem;
 }
 
 .burger-button.active .burger-top {
@@ -738,7 +759,7 @@ form button:hover {
 }
 
 .burger-button span {
-    width: 40px;
+    width: 30px;
     border-bottom: 1px solid #000;
     display: block;
     border-radius: 22px;
@@ -922,7 +943,7 @@ form button:hover {
     .mob-hide       { display: none; }
     .mob-show       { display: block; }
     h1              { font-size: 2rem; }
-    h3              { font-size: 1.6rem; }
+    h3              { font-size: 1.7rem; }
     p               { font-size: 0.9rem;}
     nav a           { font-size: 1.4rem; }
     hr              { width: 10rem; }
@@ -958,7 +979,7 @@ form button:hover {
     .footer-text    { font-size: 1rem; }
     .sm-md-text     { font-size: 0.7rem; }
     .large-text     { font-size: 1.9rem; }
-    .xl-text        { font-size: 2rem; }
+    .xl-text        { font-size: 1.9rem; }
     .med-text       { font-size: 1rem; }
     .med-lg-text    { font-size: 2.4rem; }
     .bold-text      { font-size: 1.2rem; }
@@ -986,7 +1007,7 @@ form button:hover {
     .mob-show       { display: block; }
     h1              { font-size: 1.5rem; }
     h2              { font-size: 1.4rem; }
-    h3              { font-size: 1.2rem; }
+    h3              { font-size: 1.4rem; }
     h4              { font-size: 1rem; }
     p               { font-size: 0.8rem;}
     a               { font-size: 0.9rem; }
@@ -998,4 +1019,7 @@ form button:hover {
         margin-bottom: 10%;
     }
     .banner         { min-height: 80vh; }
+    .symbol         { left: 50px; }
+    .symbol-2       { left: 93%; }
+    .symbol-3       { left: 87%; }
 }
