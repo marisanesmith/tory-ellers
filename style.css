@@ -449,7 +449,6 @@ hr {
     background-color:rgb(240,240,240);
     background-size: cover; 
     background-repeat: no-repeat;
-    /* min-height: 10rem; */
 }
 
 .landscape { padding-bottom: 65%; }
@@ -514,13 +513,135 @@ hr {
     opacity: 0.5;
 }
 
+.banner-6 {
+    background-image: url('/images/venice-canal.JPG');
+    background-size: cover;
+    /* background-position: center; */
+    min-height: 90vh;
+    position: relative;
+}
+
+.banner-7 {
+    background-position: bottom;
+    /* min-height: 60vh; */
+    position: relative;
+}
+
+.banner-7::before {
+    content: "";
+    background-image: url('/images/endless-sea.JPG');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 3;
+    z-index: -1;
+}
+
 .bg-gondola {
     background-image: url('./images/gondola.jpg');
     background-position: center;
 }
 
+.bg-bagan-balloon {
+    background-image: url('./images/bagan-balloons.jpg');
+    background-position: center;
+}
+
+.bg-riomaggiore {
+    background-image: url('./images/riomaggiore.JPG');
+    background-position: center;
+}
+
+.bg-endless-sea {
+    background-image: url('./images/endless-sea.JPG');
+    /* background-position: center; */
+}
+
+.bg-zebra {
+    background-image: url('./images/zebra.jpg');
+    background-position: center;
+}
+
+.bg-philippines {
+    background-image: url('./images/philippines.jpg');
+    /* background-position: center; */
+}
+
+.bg-el-nido {
+    background-image: url('./images/el-nido.JPG');
+    background-position: center;
+}
+
+.bg-paris {
+    background-image: url('./images/paris.JPG');
+    background-position: bottom;
+}
+
+.bg-maldives-sandbank {
+    background-image: url('./images/maldives-sandbank.jpg');
+    /* background-position: bottom; */
+}
+
+.bg-positano {
+    background-image: url('./images/positano.JPG');
+    background-position: 50% 60%;
+}
+
+.bg-santorini-greece {
+    background-image: url('./images/santorini-greece.jpg');
+    background-position: center;
+}
+
+.bg-manarola-italy {
+    background-image: url('./images/manarola-italy.JPG');
+    /* background-position: top; */
+}
+
+.bg-mexico {
+    background-image: url('./images/mexico.jpg');
+    /* background-position: center; */
+}
+
+.bg-elephant {
+    background-image: url('./images/elephant.jpg');
+    background-position: 0px 0px;
+}
+
+.bg-jaipur {
+    background-image: url('./images/jaipur.JPG');
+    background-position: center;
+}
+
+.bg-sandbank {
+    background-image: url('./images/sandbank.JPG');
+    /* background-position: 50% 30%; */
+}
+
+.bg-italian-lake {
+    background-image: url('./images/italian-lake.JPG');
+    background-position: 50% 70%;
+}
+
+.bg-florence-duomo {
+    background-image: url('./images/florence-duomo.JPG');
+    background-position: center;
+}
+
+.bg-morocco-camels {
+    background-image: url('./images/morocco-camels.JPG');
+    background-position: center;
+}
+
 .bg-giraffe {
     background-image: url('./images/giraffe.jpg');
+    background-position: bottom;
+}
+
+.bg-trevi {
+    background-image: url('./images/trevi.JPG');
     background-position: center;
 }
 
@@ -529,14 +650,24 @@ hr {
     background-position: center;
 }
 
+.bg-vietnam {
+    background-image: url('./images/vietnam.jpg');
+    background-position: center;
+}
+
 .bg-florence {
     background-image: url('./images/florence.jpg');
     background-position: center;
 }
 
+.bg-balloon-tanzania {
+    background-image: url('./images/balloon-tanzania.jpg');
+    background-position: 50% 40%;
+}
+
 .bg-bali {
     background-image: url('./images/bali.jpg');
-    background-position: 30% 15%;
+    background-position: 30% 10%;
 }
 
 .bg-manarola {
@@ -554,14 +685,79 @@ hr {
     background-position: center;
 }
 
-.bg-monstera {
-    background-image: url('./images/monstera.jpg');
+.bg-fiat {
+    background-image: url('./images/fiat.jpg');
+    background-position: center;
+}
+
+.bg-mykonos {
+    background-image: url('./images/mykonos.JPG');
+    background-position: center;
+}
+
+.bg-santorini-church {
+    background-image: url('./images/santorini-church.JPG');
+    background-position: center;
+}
+
+.bg-france {
+    background-image: url('./images/france.JPG');
+    background-position: top;
+}
+
+.bg-france-2 {
+    background-image: url('./images/france-2.JPG');
+    background-position: center;
+}
+
+.bg-como {
+    background-image: url('./images/como.JPG');
+    background-position: bottom;
+}
+
+.bg-wat-arun {
+    background-image: url('./images/wat-arun.jpg');
+    background-position: 40% 80%;
+}
+
+.bg-pamela {
+    background-image: url('./images/pamela.jpg');
+    background-position: center;
+}
+
+.bg-pamela-2 {
+    background-image: url('./images/pamela-2.jpg');
     background-position: center;
 }
 
 .bg-lofoten {
     background-image: url('./images/lofoten.JPG');
     background-position: center;
+}
+
+.bg-venice-canal {
+    background-image: url('./images/venice-canal.JPG');
+    background-position: bottom;
+}
+
+.bg-hotel-1 {
+    background-image: url('./images/hotel-1.jpg');
+    background-position: center;
+}
+
+.bg-hotel-4 {
+    background-image: url('./images/hotel-4.jpg');
+    background-position: 50% 30%;
+}
+
+.bg-hotel-6 {
+    background-image: url('./images/hotel-6.jpg');
+    background-position: 50% 30%;
+}
+
+.bg-hotel-3 {
+    background-image: url('./images/hotel-3.jpg');
+    /* background-position: center; */
 }
 
 .main-logo {
@@ -968,6 +1164,10 @@ form button:hover {
         margin-top: 10%;
     }
 
+    .shrink-img { 
+        min-height: 30vh;
+    }
+
 }
 
 @media(max-width: 48em) {
@@ -1022,4 +1222,5 @@ form button:hover {
     .symbol         { left: 50px; }
     .symbol-2       { left: 93%; }
     .symbol-3       { left: 87%; }
+    .mobile-img     { min-height: 40vh; }
 }
