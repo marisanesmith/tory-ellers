@@ -133,6 +133,10 @@ p:last-child {
     margin-bottom: 3%;
 }
 
+.copyright-text {
+    font-size: 0.8rem;
+}
+
 hr {
     border: none;
     border-bottom: 2px solid #292c33;
@@ -444,7 +448,17 @@ hr {
 .beige-border { border: 6px solid #AEA396; }
 .dk-beige-border  { 
     border: 1px solid #AEA396; 
-    padding: 7.2%;
+    /* padding: 10% */
+}
+
+.vl {
+    border-left: 1px solid #AEA396;
+    height: 500px;
+}
+
+.vr {
+    border-right: 1px solid #AEA396;
+    height: 500px;
 }
 
 .gallery [class*="col-"] {
@@ -498,6 +512,14 @@ hr {
 }
 
 .banner-4 {
+    background-image: url('/images/italian-lake.JPG');
+    background-size: cover;
+    background-position: 50% 85%;
+    min-height: 60vh;
+    position: relative;
+}
+
+.banner-8 {
     background-image: url('/images/maldives.jpg');
     background-size: cover;
     background-position: center;
@@ -526,7 +548,7 @@ hr {
 .banner-6 {
     background-image: url('/images/venice-canal.JPG');
     background-size: cover;
-    /* background-position: center; */
+    background-position: center;
     min-height: 90vh;
     position: relative;
 }
@@ -612,7 +634,7 @@ hr {
 
 .bg-mexico {
     background-image: url('./images/mexico.jpg');
-    /* background-position: center; */
+    background-position: center;
 }
 
 .bg-elephant {
@@ -1153,6 +1175,7 @@ form button:hover {
     p               { font-size: 0.9rem;}
     nav a           { font-size: 1.4rem; }
     hr              { width: 10rem; }
+    .large-text     { font-size: 2.3rem; }
     .sm-md-text     { font-size: 1.2rem; }
     .xl-text        { font-size: 2.5rem; }
     .med-lg-text    { font-size: 2.6rem; }
@@ -1175,7 +1198,7 @@ form button:hover {
     }
 
     .shrink-img { 
-        min-height: 30vh;
+        min-height: 40vh;
     }
 
 }
@@ -1188,9 +1211,9 @@ form button:hover {
     nav a           { font-size: 1.7rem; }
     .footer-text    { font-size: 1rem; }
     .sm-md-text     { font-size: 0.7rem; }
-    .large-text     { font-size: 1.9rem; }
-    .xl-text        { font-size: 1.9rem; }
-    .med-text       { font-size: 1rem; }
+    .xl-text        { font-size: 1.8rem; }
+    .large-text     { font-size: 1.3rem; }
+    .med-text       { font-size: 1.1rem; }
     .med-lg-text    { font-size: 2.4rem; }
     .bold-text      { font-size: 1.2rem; }
     .banner         { min-height: 80vh; }
@@ -1232,5 +1255,5 @@ form button:hover {
     .symbol         { left: 50px; }
     .symbol-2       { left: 93%; }
     .symbol-3       { left: 87%; }
-    .mobile-img     { min-height: 40vh; }
+    .mobile-img     { min-height: 30vh; }
 }
