@@ -264,6 +264,16 @@ hr {
     font-weight: 600;
 }
 
+.bold-para {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.bold-med-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
 .white-text { 
     color: white; 
     letter-spacing: 0.5px;

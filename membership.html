@@ -2,18 +2,22 @@
 layout: default
 title: The Club - Tory Ellers 
 disclaimer:
- - title: Complimentary Breakfast 
-   description: For up to two guests per room
- - title: Check in/Out 
-   description: Available at most luxury hotels, but subject to the resort or hotel’s availability.
- - title: Minimum Spending
-   description: There is a $500 per adult/day minimum spending requirement, which includes lodging, transfers, and experiences. 
  - title: Upgrades 
    description: Subject to the resort or hotel’s availability
  - title: Airfare 
    description: Booking in economy plus or lower must be handled by the member. 
- - title: Trip Gifting
+ - title: Minimum Spending
+   description: There is a $500 per adult/day minimum spending requirement, which includes lodging, transfers, and experiences.
+ - title: Check in/Out 
+   description: Available at most luxury hotels, but subject to the resort or hotel’s availability.
+ - title: Complimentary Breakfast 
+   description: For up to two guests per room
+ - title: Membership Sharing
    description: Your membership is only redeemable if the primary or secondary membership holder is on the trip. 
+ - title
+   description
+ - title: Cost of Services 
+   description: The cost of flights, accommodations, and reservations will be billed separately from the cost of your Tory Ellers club membership.
 accordion:
  - question: Complimentary Breakfast 
    answer: For up to two guests per room
@@ -31,7 +35,7 @@ accordion:
 <!----- Figure out the weird padding ------->
 <section class="grid bg-image banner-5 tall-20">
     <div class="col-12-middle center">
-        <p class="uppercase black-text padding-t">tory ellers membership</p>
+        <p class="uppercase black-text padding-t">tory ellers club memberships</p>
     </div>
     <div class="col-12 center" data-aos="fade-in" data-aos-duration="2000">
         <h3 class="black-text large-text padding-b-sm">The world is incredible. Come explore it. </h3>
@@ -74,12 +78,12 @@ accordion:
     <div class="col-3_xs-12" data-aos="fade-up">
         <h4 class="editable">Get There.</h4>
         <ul class="">
-            <li class="editable">Chartered</li>
+            <li class="editable">Chartered flights</li>
             <li class="editable">First or business class plane tickets</li>
-            <li class="editable">Boat, Cruise, and yacht</li>
-            <li class="editable">Airport pick up/drop off</li>
+            <!-- <li class="editable">Boat, Cruise, and yacht</li> -->
+            <!-- <li class="editable">Airport pick up/drop off</li> -->
             <li class="editable">Private cars or drivers</li>
-            <li class="editable">Transportation to and from each destination</li>
+            <li class="editable">Airport transfers, and transportation between each stop on your itinerary</li>
         </ul>
         <p class="editable mob-show ml"><em>Booked for you.</em></p>
     </div>
@@ -87,32 +91,32 @@ accordion:
         <h4 class="editable">Recharge.</h4>
         <ul class="">
             <li class="editable">Luxury accommodations at hotels, villas, and resorts</li>
-            <li class="editable">Instant room upgrades</li>
+            <li class="editable">Automatic room upgrades</li>
             <li class="editable">Early check in and late check out</li>
             <li class="editable">Resort credit to use for on-site services</li>
             <li class="editable">Complimentary breakfast for two guests per room</li>
-            <li class="editable">First-class service</li>
+            <!-- <li class="editable">First-class service</li> -->
         </ul>
         <p class="editable mob-show ml"><em>On arrival.</em></p>
     </div>
     <div class="col-3_xs-12" data-aos="fade-up">
         <h4 class="editable">Go Out.</h4>
         <ul class="">
-            <li class="editable">Private experiences</li>
+            <li class="editable">Custom itineraries</li>
             <li class="editable">Hand-picked dining reservations</li>
             <li class="editable">Exclusive events</li>
-            <li class="editable">Activities, excursions, and day trips</li>
-            <li class="editable">Custom itineraries</li>
+            <li class="editable">Remarkable activities, excursions, and day trips</li>
+            <li class="editable">Luxury boat, cruise, and yacht bookings</li>
         </ul>
         <p class="editable ml mob-show"><em>Tailored for you.</em></p>
     </div>
     <div class="col-3_xs-12" data-aos="fade-up">
         <h4 class="editable">Rest Easy.</h4>
         <ul class="">
-            <li class="editable">Mid trip check-ins</li>
-            <li class="editable">24/7 availability for questions, assistance, or emergencies</li>
+            <li class="editable">Insurances, visas, recommended vaccinations, and entry requirements handled for you.</li>
+            <li class="editable">Mid trip check0ins</li>
             <li class="editable">Rebooking or trip adjustments for the unexpected</li>
-            <li class="editable">Support via phone, email, and WhatsApp while on your trip</li>
+            <li class="editable">Both in-destination and remote support for questions, assistance, or emergencies.</li>
         </ul>
         <p class="editable ml mob-show"><em>Enjoy peace of mind.</em></p>
     </div>
@@ -224,12 +228,12 @@ accordion:
 
 <section class="grid padded center bg-dk-beige">
     <div class="col-12 center">
-        <h3 class="white-text">The Fine Print.</h3>
+        <h3 class="white-text large-text">The Fine Print.</h3>
         <h4 class="white-text">Important details about your membership.</h4>
     </div>
     {% for item in page.disclaimer %}
     <div class="col-4_sm-12 mt" data-aos="fade-up">
-        <h4 class="white-text center">{{item.title}}:</h4>
+        <h4 class="white-text center sm-md-text">{{item.title}}</h4>
         <p class="white-text center padding-l padding-r">{{item.description}}</p>
     </div>
     {% endfor %}
