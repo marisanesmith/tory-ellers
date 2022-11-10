@@ -535,7 +535,7 @@ hr {
 
 .banner-5::before {
     content: "";
-    background-image: url('/images/sand-dune.jpg');
+    background-image: url('/images/sunset.jpg');
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -549,7 +549,7 @@ hr {
     background-image: url('/images/venice-canal.JPG');
     background-size: cover;
     background-position: center;
-    min-height: 90vh;
+    min-height: 80vh;
     position: relative;
 }
 
@@ -649,7 +649,7 @@ hr {
 
 .bg-sandbank {
     background-image: url('./images/sandbank.JPG');
-    /* background-position: 50% 30%; */
+    background-position: 40% 40%;
 }
 
 .bg-italian-lake {
@@ -712,14 +712,24 @@ hr {
     background-position: center;
 }
 
+.bg-italy-hotel {
+    background-image: url('./images/italy-hotel.jpg');
+    background-position: 50% 20%;
+}
+
 .bg-ocean {
     background-image: url('./images/ocean.jpg');
     background-position: center;
 }
 
+.bg-ocean-drone {
+    background-image: url('./images/ocean-drone.jpg');
+    background-position: 50% 30%;
+}
+
 .bg-fiat {
     background-image: url('./images/fiat.jpg');
-    background-position: center;
+    background-position: 20% 40%;
 }
 
 .bg-mykonos {
@@ -754,12 +764,12 @@ hr {
 
 .bg-pamela {
     background-image: url('./images/pamela.jpg');
-    background-position: center;
+    background-position: 50% 70%;
 }
 
 .bg-pamela-2 {
     background-image: url('./images/pamela-2.jpg');
-    background-position: center;
+    background-position: 50% 70%;
 }
 
 .bg-lofoten {
@@ -782,6 +792,11 @@ hr {
     background-position: 50% 30%;
 }
 
+.bg-hotel-5 {
+    background-image: url('./images/hotel-5.jpg');
+    background-position: center;
+}
+
 .bg-hotel-6 {
     background-image: url('./images/hotel-6.jpg');
     background-position: 50% 30%;
@@ -789,7 +804,7 @@ hr {
 
 .bg-hotel-3 {
     background-image: url('./images/hotel-3.jpg');
-    /* background-position: center; */
+    background-position: center;
 }
 
 .main-logo {
