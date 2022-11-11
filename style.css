@@ -548,7 +548,7 @@ hr {
 .banner-6 {
     background-image: url('/images/venice-canal.JPG');
     background-size: cover;
-    background-position: center;
+    background-position: 50% 80%;
     min-height: 80vh;
     position: relative;
 }
@@ -714,12 +714,17 @@ hr {
 
 .bg-italy-hotel {
     background-image: url('./images/italy-hotel.jpg');
-    background-position: 50% 20%;
+    background-position: bottom;
 }
 
 .bg-ocean {
     background-image: url('./images/ocean.jpg');
     background-position: center;
+}
+
+.bg-statue {
+    background-image: url('./images/statue.JPG');
+    background-position: 50% 20%;
 }
 
 .bg-ocean-drone {
@@ -779,7 +784,7 @@ hr {
 
 .bg-venice-canal {
     background-image: url('./images/venice-canal.JPG');
-    background-position: bottom;
+    background-position: center;
 }
 
 .bg-hotel-1 {
