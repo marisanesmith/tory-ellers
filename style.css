@@ -604,7 +604,7 @@ hr {
 
 .bg-el-nido {
     background-image: url('./images/el-nido.JPG');
-    background-position: center;
+    background-position: 50% 70%;
 }
 
 .bg-paris {
