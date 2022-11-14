@@ -50,14 +50,15 @@ html { display: block; }
 
 /* Typography */
 
-h1, h2, h3, h4, a {
+h1, h2, h3, p, a {
     font-family: minerva-modern, sans-serif;
     color: #292c33;
     letter-spacing: 1px;
 }
 
-p, h5 {
-    font-family: 'libre', 'serif';
+h4, h5 {
+    font-family: 'libre', 'serif'; 
+    font-weight: 100;
     color: #292c33;
     letter-spacing: 1px;
 }
@@ -264,7 +265,7 @@ hr {
 .small-text { font-size: 1.2rem; }
 
 .bold-text { 
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 600;
 }
 
