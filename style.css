@@ -84,12 +84,12 @@ h4 {
 }
 
 h5 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 100;
 }
 /* 
@@ -270,12 +270,12 @@ hr {
 }
 
 .bold-para {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
 }
 
 .bold-med-text {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
 }
 
@@ -1193,7 +1193,7 @@ form button:hover {
     .mob-show       { display: block; }
     h1              { font-size: 2rem; }
     h3              { font-size: 1.7rem; }
-    p               { font-size: 0.9rem;}
+    p               { font-size: 1.1rem;}
     nav a           { font-size: 1.4rem; }
     hr              { width: 10rem; }
     .large-text     { font-size: 2.3rem; }
@@ -1262,8 +1262,8 @@ form button:hover {
     h1              { font-size: 1.5rem; }
     h2              { font-size: 1.4rem; }
     h3              { font-size: 1.4rem; }
-    h4              { font-size: 1rem; }
-    p               { font-size: 0.8rem;}
+    h4              { font-size: 0.9rem; }
+    p               { font-size: 1.1rem;}
     a               { font-size: 0.9rem; }
     nav a           { font-size: 1.3rem; }
     .med-lg-text    { font-size: 1.3rem; }
