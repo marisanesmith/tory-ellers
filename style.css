@@ -1126,11 +1126,11 @@ form button:hover {
 
 /* Slick Slider styles */
 
-.slider-container { padding: 5%; }
+.slider-container { padding: 0%; }
 
 .slider-item {
-    padding: 1rem;
-    display: none;
+    /* padding: 1rem; */
+    /* display: none; */
 }
 
 .slider-item:first-child {
