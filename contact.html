@@ -13,17 +13,26 @@ title: Plan a Trip - Tory Ellers
 <section class="grid padded bg-lt-beige">
     <div class="col-12-middle center">
       <h2 class="editable">
-       Design Your Dream Vacation.
+       LET'S DESIGN YOUR DREAM TRIP.
       </h2>
     </div>
     <form class="col-12 form-style-two center editable" action="https://formspree.io/f/meqdllkb" method="POST">
       <label for="_name"></label>
-      <input type="text" placeholder="First Name & Last Name" name="_name" id="_name" />
+      <input type="text" placeholder="First Name*" name="_firstname" id="_firstname" required/>
+      <input type="text" placeholder="Last Name*" name="_lastname" id="_lastname" required/>
       <label for="_replyto"></label>
-      <input type="email" placeholder="Email" name="_replyto" id="_replyto" />
+      <input type="email" placeholder="Email*" name="_replyto" id="_replyto" required/>
+      <input type="text" placeholder="Confirm Email*" name="_email" id="_email" required/>
+      <label for="message"></label>
+      <input type="text" placeholder="Phone" name="_phone" id="_phone"/>
       <label for="message"></label>
       <textarea class="editable" name="message" id="message" placeholder="Which membership would be best for you?"></textarea>
-      <textarea name="message" id="message" placeholder="What destinations are you interested in?"></textarea>
+      <textarea name="message" id="message" placeholder="What destinations are you interested in?*" required></textarea>
+      <textarea name="message" id="message" placeholder="How many people are traveling with you?*" required></textarea>
+      <textarea name="message" id="message" placeholder="What are your travel dates?*" required></textarea>
+      <textarea name="message" id="message" placeholder="Approximate budget for your accommodations?*" required></textarea>
+      <textarea name="message" id="message" placeholder="Any special celebrations?"></textarea>
+      <textarea name="message" id="message" placeholder="Who referred you?*" required></textarea>
       <textarea class="mb" name="message" id="message" placeholder="Message"></textarea>
       <br />
       <button type="submit" class="button editable">plan my trip</button>

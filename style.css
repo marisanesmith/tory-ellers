@@ -974,6 +974,16 @@ form button:hover {
   border: 2px solid #B0846A;
 }
 
+#_firstname, #_replyto {
+    width: 24%;
+    /* float: left; */
+}
+
+#_lastname, #_email {
+    width: 24%;
+    margin-left: 2%;
+}
+
 /* Menu & Mobile Menu */
 
 .burger-button {
