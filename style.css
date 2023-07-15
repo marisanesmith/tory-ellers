@@ -920,6 +920,7 @@ hr {
   
 form input, 
 form textarea {
+  /* position: relative; */
   width: 50%;
   margin: 0.5rem 0;
   padding: 0.5rem;
@@ -927,7 +928,7 @@ form textarea {
   border: none;
   /* border: 2px solid rgb(220,220,220); */
   font-family: minerva-modern, sans-serif;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   cursor: pointer;
   /* background-color: #f4eee6; */
   border-bottom: 2px solid #B0846A;
@@ -940,7 +941,7 @@ form textarea:focus {
 }
 
 textarea {
-  min-height: 0.5rem;
+  min-height: 0.9rem;
 }
 
 form label {
@@ -1264,6 +1265,9 @@ form button:hover {
         /* font-size: 1.2rem;  */
         margin-top: 10%;
     }
+    .input-text {
+        font-size: 1rem;
+    }
 }
 
 @media(max-width: 36em) {
@@ -1287,4 +1291,5 @@ form button:hover {
     .symbol-2       { left: 93%; }
     .symbol-3       { left: 87%; }
     .mobile-img     { min-height: 30vh; }
+    .input-text      { font-size: 0.2rem; }
 }
