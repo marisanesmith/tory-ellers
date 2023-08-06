@@ -174,6 +174,7 @@ hr {
 .padding-t-sm { padding-top: 3%; }
 .padding-r-sm { padding-right: 3%; }
 .padding-b-sm { padding-bottom: 3%; }
+.padding-b-xs { padding-bottom: 2%; }
 
 .padding-r-lg { padding-right: 18%; }
 .padding-l-lg { padding-left: 18%; }
@@ -263,6 +264,7 @@ hr {
 }
 
 .small-text { font-size: 1.2rem; }
+.xs-text    { font-size: 0.9rem; }
 
 .bold-text { 
     font-size: 1.7rem;
